@@ -1,4 +1,4 @@
-package models;
+package com.yorosoft.mystock.mystock.models;
 
 import java.io.Serializable;
 import java.lang.Long;
@@ -17,7 +17,7 @@ public class CommandeFournisseur implements Serializable {
 
 	   
 	@Id
-	@GeneratedValue
+	@GeneratedValue(strategy = GenerationType.AUTO)
 	private Long idCommandeFournisseur;
 	
 	@NotNull

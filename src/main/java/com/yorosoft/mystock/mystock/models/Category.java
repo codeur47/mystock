@@ -1,4 +1,4 @@
-package models;
+package com.yorosoft.mystock.mystock.models;
 
 import java.io.Serializable;
 import java.lang.Long;
@@ -13,14 +13,13 @@ import javax.validation.constraints.NotNull;
  *
  */
 @Entity
-
 public class Category implements Serializable {
 
 	   
 	private static final long serialVersionUID = 1L;
 	
 	@Id
-	@GeneratedValue
+	@GeneratedValue(strategy = GenerationType.AUTO)
 	@NotNull
 	private Long idCategory;
 	

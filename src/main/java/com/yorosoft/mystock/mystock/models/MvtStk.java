@@ -1,4 +1,4 @@
-package models;
+package com.yorosoft.mystock.mystock.models;
 
 import java.io.Serializable;
 import java.lang.Long;
@@ -20,7 +20,7 @@ public class MvtStk implements Serializable {
 	public static final int SORTIE = 2;
 	   
 	@Id
-	@GeneratedValue
+	@GeneratedValue(strategy = GenerationType.AUTO)
 	private Long idMvtStk;
 	
 	@Temporal(TemporalType.TIMESTAMP)
